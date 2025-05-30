@@ -37,16 +37,16 @@ public class Martinez_Ashly_IDClase {
     }
 
     private void agregarPalabrasIniciales() {
-        palabras[0] = "HONDURAS";
-        palabras[1] = "PROGRAMAR";
-        palabras[2] = "JAVA";
-        palabras[3] = "ESCUELA";
-        palabras[4] = "TECLADO";
-        palabras[5] = "MOUSE";
-        palabras[6] = "LENGUAJE";
-        palabras[7] = "PUERTA";
-        palabras[8] = "CIUDAD";
-        palabras[9] = "CAMINO";
+        palabras[0] = "Honduras";
+        palabras[1] = "Programar";
+        palabras[2] = "Java";
+        palabras[3] = "Amor";
+        palabras[4] = "Teclado";
+        palabras[5] = "Italia";
+        palabras[6] = "Recursos";
+        palabras[7] = "Cansancio";
+        palabras[8] = "Palabra";
+        palabras[9] = "Compatible";
     }
 
     private void crearVentana() {
