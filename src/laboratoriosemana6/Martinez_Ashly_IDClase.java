@@ -100,7 +100,7 @@ public class Martinez_Ashly_IDClase {
 
     private void iniciarJuego() {
         Random random = new Random();
-        int indice = random.nextInt(10); // Siempre hay 10 palabras
+        int indice = random.nextInt(10); 
         palabra = palabras[indice];
         oculta = new char[palabra.length()];
         int i = 0;
@@ -109,7 +109,7 @@ public class Martinez_Ashly_IDClase {
             i++;
         }
         oportunidades = 5;
-        mostrarEstado("¡Comienza el juego!\n");
+        mostrarEstado("Comienza el juego!\n");
     }
 
     private void enviarLetra() {
@@ -140,14 +140,14 @@ public class Martinez_Ashly_IDClase {
 
         if (aciertos == 0) {
             oportunidades--;
-            mostrarEstado("¡Fallaste! Esa letra no está.\n");
+            mostrarEstado("Fallaste! Esa letra no está.\n");
         } else {
-            mostrarEstado("¡Le pegaste a una letra!\n");
+            mostrarEstado("Le pegaste a una letra!\n");
         }
 
         String descubierta = new String(oculta);
         if (descubierta.equals(palabra)) {
-            areaTexto.append("\n¡Ganaste! La palabra era: " + palabra);
+            areaTexto.append("\nGanaste! La palabra era: " + palabra);
             palabra = "";
         } else {
             if (oportunidades == 0) {
@@ -158,7 +158,7 @@ public class Martinez_Ashly_IDClase {
     }
 
     private void cambiarPalabras() {
-        String entrada = JOptionPane.showInputDialog("Ingrese 10 palabras separadas por comas:");
+        String entrada = JOptionPane.showInputDialog("Ingrese 10 palabras separadas por comas: ");
         if (entrada != null) {
             String[] nuevas = entrada.toUpperCase().split(",");
             int i = 0;
